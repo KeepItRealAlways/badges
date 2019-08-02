@@ -42,7 +42,7 @@
      <property name="sizeConstraint">
       <enum>QLayout::SetFixedSize</enum>
      </property>
-     <item row="1" column="0" colspan="3">
+     <item row="1" column="0" colspan="4">
       <widget class="QSlider" name="HorizontalPhotoSlider">
        <property name="maximum">
         <number>999</number>
@@ -55,7 +55,60 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="0" colspan="3">
+     <item row="5" column="1">
+      <widget class="QPushButton" name="SelectSurnameFont">
+       <property name="text">
+        <string>Шрифт фамилии</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QPushButton" name="SelectNameFont">
+       <property name="text">
+        <string>Шрифт имени</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0" colspan="4">
+      <widget class="QSlider" name="HorizontalNameSlider">
+       <property name="maximum">
+        <number>999</number>
+       </property>
+       <property name="value">
+        <number>500</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="4">
+      <widget class="QSlider" name="VerticalPhotoSlider">
+       <property name="maximum">
+        <number>999</number>
+       </property>
+       <property name="value">
+        <number>979</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="5">
+      <widget class="QSlider" name="VerticalNameSlider">
+       <property name="maximum">
+        <number>999</number>
+       </property>
+       <property name="value">
+        <number>979</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="0" colspan="4">
       <widget class="QLabel" name="Preview">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
@@ -71,86 +124,7 @@
        </property>
       </widget>
      </item>
-     <item row="3" column="0" colspan="2">
-      <widget class="QSlider" name="PhotoSizeSlider">
-       <property name="minimum">
-        <number>1</number>
-       </property>
-       <property name="maximum">
-        <number>1000</number>
-       </property>
-       <property name="value">
-        <number>500</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="0">
-      <widget class="QPushButton" name="SelectFont">
-       <property name="text">
-        <string>Выбрать шрифт</string>
-       </property>
-      </widget>
-     </item>
-     <item row="3" column="2">
-      <widget class="QLabel" name="label">
-       <property name="text">
-        <string>Увеличение/уменьшение фото</string>
-       </property>
-       <property name="alignment">
-        <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="3">
-      <widget class="QSlider" name="VerticalPhotoSlider">
-       <property name="maximum">
-        <number>999</number>
-       </property>
-       <property name="value">
-        <number>979</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0" colspan="3">
-      <widget class="QSlider" name="HorizontalTextSlider">
-       <property name="maximum">
-        <number>999</number>
-       </property>
-       <property name="value">
-        <number>500</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="4">
-      <widget class="QSlider" name="VerticalTextSlider">
-       <property name="maximum">
-        <number>999</number>
-       </property>
-       <property name="value">
-        <number>979</number>
-       </property>
-       <property name="orientation">
-        <enum>Qt::Vertical</enum>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="1">
-      <widget class="QPushButton" name="SelectMockup">
-       <property name="text">
-        <string>Выбрать макет</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="2">
+     <item row="5" column="3">
       <widget class="QPushButton" name="SelectColor">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
@@ -163,7 +137,33 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="3" rowspan="4" colspan="2">
+     <item row="3" column="0" colspan="4">
+      <widget class="QSlider" name="HorizontalSurnameSlider">
+       <property name="maximum">
+        <number>999</number>
+       </property>
+       <property name="value">
+        <number>500</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="6">
+      <widget class="QSlider" name="VerticalSurnameSlider">
+       <property name="maximum">
+        <number>999</number>
+       </property>
+       <property name="value">
+        <number>979</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Vertical</enum>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4" rowspan="5" colspan="3">
       <widget class="QPushButton" name="Run">
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Minimum">
@@ -172,7 +172,30 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Запуск</string>
+        <string>Дальше</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="2">
+      <widget class="QPushButton" name="SelectMockup">
+       <property name="text">
+        <string>Выбрать макет</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="0" colspan="4">
+      <widget class="QSlider" name="PhotoSizeSlider">
+       <property name="minimum">
+        <number>1</number>
+       </property>
+       <property name="maximum">
+        <number>1000</number>
+       </property>
+       <property name="value">
+        <number>500</number>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
       </widget>
      </item>
